@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AP Gov 4/5 | Study Hub</title>
+<style>
+:root{--nav:#10182d;--blue:#3157d8;--light:#f5f7fb;--card:#fff;--text:#172033;--muted:#667085;--line:#e5e8ef;--green:#138a5b}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--light);color:var(--text);font:15px/1.6 Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+.sidebar{position:fixed;left:0;top:0;bottom:0;width:245px;background:var(--nav);color:#fff;padding:28px 18px;z-index:10}.brand{font-weight:850;font-size:20px;padding:0 12px 28px}.brand span{color:#8ea6ff}
+.nav a{display:block;color:#b9c1d5;text-decoration:none;padding:11px 13px;border-radius:9px;margin:3px 0}.nav a:hover,.nav a.active{background:#202b4b;color:#fff}
+.main{margin-left:245px}.top{background:#fff;border-bottom:1px solid var(--line);padding:14px 38px;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:5}.search{border:1px solid var(--line);border-radius:9px;padding:9px 12px;width:260px}
+.wrap{max-width:1120px;margin:auto;padding:38px}.hero{background:linear-gradient(120deg,#18254b,#3157d8);color:white;border-radius:20px;padding:42px;margin-bottom:28px}.hero h1{font-size:42px;line-height:1.08;margin:8px 0}.hero p{color:#e4eaff;max-width:720px}.btn{display:inline-block;background:#fff;color:#2444b8;padding:10px 15px;border-radius:9px;text-decoration:none;font-weight:750;margin-top:10px}
+h2{font-size:25px;margin:0 0 6px}h3{margin:0 0 6px}.muted{color:var(--muted)}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px;margin-bottom:16px}.stat{font-size:28px;font-weight:850}.tag{font-size:12px;font-weight:800;color:var(--blue);letter-spacing:.4px}
+.bar{height:8px;background:#e9ecf3;border-radius:99px;margin:12px 0}.bar span{display:block;height:100%;background:var(--blue);border-radius:99px}
+.unit{min-height:175px}.unit p{color:var(--muted)}.skills{display:grid;grid-template-columns:1fr 1fr;gap:14px}.skill{border-left:4px solid var(--blue);padding:12px 15px;background:#fff;border-radius:8px;border-top:1px solid var(--line);border-right:1px solid var(--line);border-bottom:1px solid var(--line)}
+table{width:100%;border-collapse:collapse;background:#fff;border:1px solid var(--line);border-radius:12px;overflow:hidden}th,td{text-align:left;padding:13px;border-bottom:1px solid var(--line)}th{background:#eef2ff}tr:last-child td{border:0}
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin:15px 0}.tab{border:1px solid var(--line);background:#fff;padding:9px 13px;border-radius:8px;cursor:pointer}.tab.on{background:var(--blue);color:#fff}
+.panel{display:none}.panel.show{display:block}.flash{min-height:170px;display:flex;align-items:center;justify-content:center;text-align:center;font-size:20px;font-weight:750;cursor:pointer;background:#fff;border:1px solid var(--line);border-radius:14px;padding:25px}.quiz button{display:block;width:100%;text-align:left;padding:12px;margin:8px 0;background:#fff;border:1px solid var(--line);border-radius:8px;cursor:pointer}.quiz button:hover{border-color:var(--blue)}.feedback{font-weight:750}
+textarea{width:100%;min-height:150px;padding:13px;border:1px solid var(--line);border-radius:9px;font:inherit}.check label{display:block;padding:9px;border-bottom:1px solid var(--line)}footer{padding:30px 38px;color:var(--muted)}
+@media(max-width:800px){.sidebar{position:static;width:100%;padding:15px}.nav{display:flex;overflow:auto}.brand{padding-bottom:10px}.main{margin-left:0}.top{padding:10px 18px}.grid{grid-template-columns:1fr 1fr}.wrap{padding:22px}.search{width:150px}}
+@media(max-width:550px){.grid,.skills{grid-template-columns:1fr}.hero h1{font-size:32px}}
+</style>
+</head>
+<body>
+<aside class="sidebar">
+<div class="brand">AP GOV <span>4/5</span></div>
+<nav class="nav">
+<a href="#home" class="active">⌂ Dashboard</a>
+<a href="#units">▦ Units</a>
+<a href="#skills">◎ Skills</a>
+<a href="#docs">▤ Documents</a>
+<a href="#scotus">⚖ SCOTUS</a>
+<a href="#practice">✓ Practice</a>
+<a href="#frq">✎ FRQs</a>
+<a href="#plan">◷ Study Plan</a>
+</nav>
+</aside>
+
+<div class="main">
+<div class="top"><strong>AP U.S. Government & Politics</strong><input class="search" id="search" placeholder="Search this page..." oninput="searchPage()"></div>
+<main class="wrap" id="home">
+<section class="hero">
+<div class="tag" style="color:#b9c7ff">YOUR AP GOV STUDY HUB</div>
+<h1>Build the knowledge.<br>Master the skills. Get the 4/5.</h1>
+<p>A structured study website organized around the official AP course framework: five units, five skills, foundational documents, Supreme Court cases, MCQs and all four FRQ types.</p>
+<a class="btn" href="#plan">View my study plan →</a>
+</section>
+
+<div class="grid">
+<div class="card"><div class="tag">COURSE</div><div class="stat">5</div><div class="muted">Units to master</div></div>
+<div class="card"><div class="tag">SKILLS</div><div class="stat">5</div><div class="muted">AP skills to practice</div></div>
+<div class="card"><div class="tag">FRQ</div><div class="stat">4</div><div class="muted">Question types</div></div>
+</div>
+
+<section id="units">
+<h2>01 — Course Units</h2><p class="muted">Start with the highest-weight units, but build coverage across all five.</p>
+<div class="grid">
+<div class="card unit searchable"><span class="tag">UNIT 1 · 15–22%</span><h3>Foundations of American Democracy</h3><p>Constitutionalism, democracy, federalism, ratification and founding principles.</p><div class="bar"><span style="width:22%"></span></div></div>
+<div class="card unit searchable"><span class="tag">UNIT 2 · 25–36%</span><h3>Interactions Among Branches</h3><p>Congress, presidency, bureaucracy, judiciary and checks and balances.</p><div class="bar"><span style="width:36%"></span></div></div>
+<div class="card unit searchable"><span class="tag">UNIT 3 · 13–18%</span><h3>Civil Liberties & Civil Rights</h3><p>Rights, liberties, due process, equal protection and civil rights.</p><div class="bar"><span style="width:18%"></span></div></div>
+<div class="card unit searchable"><span class="tag">UNIT 4 · 10–15%</span><h3>Political Ideologies & Beliefs</h3><p>Public opinion, political socialization, ideology and policy preferences.</p><div class="bar"><span style="width:15%"></span></div></div>
+<div class="card unit searchable"><span class="tag">UNIT 5 · 20–27%</span><h3>Political Participation</h3><p>Voting, elections, parties, interest groups, media and participation.</p><div class="bar"><span style="width:27%"></span></div></div>
+</div>
+</section>
+
+<section id="skills">
+<h2>02 — AP Skills</h2><p class="muted">A 4/5 requires more than memorizing vocabulary. Practice these five skills repeatedly.</p>
+<div class="skills">
+<div class="skill"><b>01 · Concept Application</b><br><span class="muted">Apply political concepts to scenarios in context.</span></div>
+<div class="skill"><b>02 · SCOTUS Application</b><br><span class="muted">Apply Supreme Court decisions to new situations.</span></div>
+<div class="skill"><b>03 · Data Analysis</b><br><span class="muted">Interpret tables, charts, graphs, maps and infographics.</span></div>
+<div class="skill"><b>04 · Source Analysis</b><br><span class="muted">Analyze foundational documents and other sources.</span></div>
+<div class="skill"><b>05 · Argumentation</b><br><span class="muted">Build a defensible argument with evidence and reasoning.</span></div>
+</div>
+</section>
+
+<section id="docs">
+<h2>03 — Foundational Documents</h2><p class="muted">For each document: know the argument, evidence, perspective and connection to AP concepts.</p>
+<div class="grid">
+<div class="card searchable"><h3>Constitution</h3><p>Structure of government, separation of powers, federalism, checks and balances.</p></div>
+<div class="card searchable"><h3>Federalist No. 10</h3><p>Factions, pluralism and the extended republic.</p></div>
+<div class="card searchable"><h3>Federalist No. 51</h3><p>Ambition counteracting ambition; checks and balances.</p></div>
+<div class="card searchable"><h3>Brutus No. 1</h3><p>Concerns about centralized power and the size of the republic.</p></div>
+<div class="card searchable"><h3>Declaration of Independence</h3><p>Natural rights, equality and consent of the governed.</p></div>
+<div class="card searchable"><h3>Letter from Birmingham Jail</h3><p>Civil disobedience, justice and the relationship between law and morality.</p></div>
+</div>
+</section>
+
+<section id="scotus">
+<h2>04 — SCOTUS Case Method</h2>
+<div class="card">
+<p>Don't memorize cases as isolated names. Use this five-step structure:</p>
+<div class="grid">
+<div><b>1. Facts</b><p class="muted">What happened?</p></div>
+<div><b>2. Issue</b><p class="muted">What constitutional question?</p></div>
+<div><b>3. Holding</b><p class="muted">What did the Court decide?</p></div>
+<div><b>4. Reasoning</b><p class="muted">Why did it decide that way?</p></div>
+<div><b>5. Connection</b><p class="muted">What principle can you apply elsewhere?</p></div>
+</div>
+</div>
+</section>
+
+<section id="practice">
+<h2>05 — Practice Center</h2>
+<div class="tabs"><button class="tab on" onclick="showTab('mcq',this)">MCQ</button><button class="tab" onclick="showTab('flash',this)">Flashcard</button></div>
+<div id="mcq" class="panel show card quiz">
+<p><b>Federalist No. 10 argues that a large republic can help control the effects of factions. Which explanation best matches Madison's reasoning?</b></p>
+<button onclick="grade(this,false)">A. A large republic eliminates factions entirely.</button>
+<button onclick="grade(this,true)">B. A large republic makes it harder for one faction to dominate the government.</button>
+<button onclick="grade(this,false)">C. A large republic prevents citizens from participating.</button>
+<button onclick="grade(this,false)">D. A large republic gives state governments complete authority.</button>
+<p id="feedback" class="feedback"></p>
+</div>
+<div id="flash" class="panel">
+<div class="flash" onclick="flipCard()"><span id="flashText">Click to reveal: What is federalism?</span></div>
+</div>
+</section>
+
+<section id="frq">
+<h2>06 — FRQ Lab</h2><p class="muted">Practice all four formats used on the AP exam.</p>
+<div class="grid">
+<div class="card"><h3>Concept Application</h3><p class="muted">Respond to a political scenario and explain a government institution, process or behavior.</p></div>
+<div class="card"><h3>Quantitative Analysis</h3><p class="muted">Describe patterns or trends in data and connect them to political concepts.</p></div>
+<div class="card"><h3>SCOTUS Comparison</h3><p class="muted">Compare a nonrequired case with a required case.</p></div>
+<div class="card"><h3>Argument Essay</h3><p class="muted">Make a defensible claim and support it with evidence and reasoning.</p></div>
+</div>
+<div class="card">
+<h3>Argument Essay Practice</h3>
+<p><b>Prompt:</b> Develop an argument about whether separation of powers makes it easier or harder for the federal government to respond to national problems.</p>
+<textarea id="frqText" placeholder="Write your thesis, evidence and reasoning here..."></textarea><br>
+<button class="btn" style="border:0;background:var(--blue);color:white" onclick="saveFRQ()">Save response</button> <span id="saved" class="muted"></span>
+</div>
+</section>
+
+<section id="plan">
+<h2>07 — September → May AP Test Timeline</h2>
+<p class="muted">A long-term roadmap from now until your AP U.S. Government & Politics exam in May. The goal is to learn first, practice second, and enter May in full-review mode.</p>
+
+<div class="card">
+<h3>🗓 Big Picture</h3>
+<table>
+<tr><th>Period</th><th>Phase</th><th>Main Goal</th></tr>
+<tr><td>September</td><td>Build the Foundation</td><td>Unit 1 + core vocabulary + documents</td></tr>
+<tr><td>October</td><td>Government Institutions</td><td>Unit 2 + branches + checks and balances</td></tr>
+<tr><td>November</td><td>Rights & Liberties</td><td>Unit 3 + required SCOTUS connections</td></tr>
+<tr><td>December</td><td>Political Beliefs</td><td>Unit 4 + polling + ideology</td></tr>
+<tr><td>January</td><td>Political Participation</td><td>Unit 5 + elections + parties + interest groups</td></tr>
+<tr><td>February</td><td>Connect Everything</td><td>Mixed-unit MCQs + documents + SCOTUS</td></tr>
+<tr><td>March</td><td>FRQ Month</td><td>Master all 4 FRQ types</td></tr>
+<tr><td>April</td><td>Exam Simulation</td><td>Timed practice exams + fix weak areas</td></tr>
+<tr><td>May</td><td>Final Review</td><td>Light review, confidence, and exam readiness</td></tr>
+</table>
+</div>
+
+<div class="grid">
+<div class="card searchable"><span class="tag">SEPTEMBER</span><h3>Foundation Month</h3><ul><li>Finish Unit 1 topics</li><li>Learn Constitution + Federalist No. 10/51 + Brutus No. 1</li><li>Start SCOTUS case notes</li><li>10–15 MCQs per week</li></ul><b>Checkpoint:</b> Explain federalism, separation of powers, factions and checks without notes.</div>
+
+<div class="card searchable"><span class="tag">OCTOBER</span><h3>Branches Month</h3><ul><li>Unit 2: Congress</li><li>Unit 2: Presidency</li><li>Unit 2: Bureaucracy</li><li>Unit 2: Judiciary</li><li>Practice concept application</li></ul><b>Checkpoint:</b> Explain how the three branches check each other.</div>
+
+<div class="card searchable"><span class="tag">NOVEMBER</span><h3>Rights Month</h3><ul><li>Complete Unit 3</li><li>Review civil liberties vs. civil rights</li><li>Connect required SCOTUS cases to amendments</li><li>Practice SCOTUS comparison</li></ul><b>Checkpoint:</b> Given a scenario, identify the relevant constitutional principle.</div>
+
+<div class="card searchable"><span class="tag">DECEMBER</span><h3>Beliefs Month</h3><ul><li>Complete Unit 4</li><li>Public opinion + polling</li><li>Political socialization</li><li>Liberal vs. conservative policy positions</li><li>Analyze graphs and polling data</li></ul><b>Checkpoint:</b> Read a political graph and explain what it means.</div>
+
+<div class="card searchable"><span class="tag">JANUARY</span><h3>Participation Month</h3><ul><li>Complete Unit 5</li><li>Voting + elections</li><li>Political parties</li><li>Interest groups + media</li><li>Campaign finance</li></ul><b>Checkpoint:</b> Connect political participation to institutions and policy.</div>
+
+<div class="card searchable"><span class="tag">FEBRUARY</span><h3>Connection Month</h3><ul><li>Mix Units 1–5</li><li>Weekly mixed MCQ set</li><li>Review every required document</li><li>Review every required SCOTUS case</li><li>Build an error log</li></ul><b>Checkpoint:</b> Your mistakes should become predictable and fixable.</div>
+
+<div class="card searchable"><span class="tag">MARCH</span><h3>FRQ Month</h3><ul><li>Concept Application FRQ</li><li>Quantitative Analysis FRQ</li><li>SCOTUS Comparison FRQ</li><li>Argument Essay</li><li>Practice writing under time pressure</li></ul><b>Checkpoint:</b> Complete each FRQ type confidently without needing a model answer.</div>
+
+<div class="card searchable"><span class="tag">APRIL</span><h3>Full Exam Month</h3><ul><li>Take timed mixed MCQ sets</li><li>Complete timed FRQs</li><li>Review weak units only after testing them</li><li>Repeat missed questions</li><li>Do at least 1–2 full exam simulations</li></ul><b>Checkpoint:</b> Your practice scores should consistently be in your target range.</div>
+
+<div class="card searchable"><span class="tag">MAY</span><h3>Final Stretch</h3><ul><li>Review your condensed notes</li><li>Rapid SCOTUS + document review</li><li>Review your error log</li><li>Do short MCQ sets, not endless cramming</li><li>Prioritize sleep and exam readiness</li></ul><b>Checkpoint:</b> Walk into the AP exam knowing how to apply what you studied.</div>
+</div>
+
+<div class="card">
+<h3>📅 Weekly Routine</h3>
+<table>
+<tr><th>Day</th><th>Study Task</th></tr>
+<tr><td>Monday</td><td>Learn new content + vocabulary</td></tr>
+<tr><td>Tuesday</td><td>Continue content + one SCOTUS/document</td></tr>
+<tr><td>Wednesday</td><td>10–15 MCQs + review every mistake</td></tr>
+<tr><td>Thursday</td><td>Data/source analysis practice</td></tr>
+<tr><td>Friday</td><td>FRQ skill practice</td></tr>
+<tr><td>Weekend</td><td>Weekly review + mixed questions + update error log</td></tr>
+</table>
+</div>
+</section>
+
+<section>
+<h2>08 — Daily Checklist</h2>
+<div class="card check">
+<label><input type="checkbox"> Learn/review key vocabulary</label>
+<label><input type="checkbox"> Review one foundational document</label>
+<label><input type="checkbox"> Review one SCOTUS case</label>
+<label><input type="checkbox"> Complete 5–15 MCQs</label>
+<label><input type="checkbox"> Analyze one source or data set</label>
+<label><input type="checkbox"> Practice one FRQ skill</label>
+<label><input type="checkbox"> Write down why missed questions were wrong</label>
+</div>
+</section>
+</main>
+<footer>AP GOV 4/5 Study Hub · Content structure follows the College Board AP U.S. Government and Politics framework.</footer>
+</div>
+
+<script>
+function showTab(id,btn){document.querySelectorAll('.panel').forEach(x=>x.classList.remove('show'));document.getElementById(id).classList.add('show');document.querySelectorAll('.tab').forEach(x=>x.classList.remove('on'));btn.classList.add('on')}
+function grade(b,c){document.querySelectorAll('.quiz button').forEach(x=>x.disabled=true);let f=document.getElementById('feedback');f.textContent=c?'✓ Correct — Madison argues that a large republic makes factional domination more difficult.':'✗ Not quite — think about Madison’s argument that a larger republic makes it harder for one faction to control government.';f.style.color=c?'var(--green)':'#b42318'}
+let flip=false;function flipCard(){flip=!flip;document.getElementById('flashText').textContent=flip?'Federalism is the division of power between the national government and state governments.':'Click to reveal: What is federalism?'}
+function saveFRQ(){localStorage.setItem('apgov-frq',document.getElementById('frqText').value);document.getElementById('saved').textContent='Saved in this browser ✓'}
+window.addEventListener('load',()=>{let x=localStorage.getItem('apgov-frq');if(x)document.getElementById('frqText').value=x})
+function searchPage(){let q=document.getElementById('search').value.toLowerCase();document.querySelectorAll('.searchable').forEach(x=>x.style.display=!q||x.innerText.toLowerCase().includes(q)?'block':'none')}
+</script>
+</body>
+</html>
